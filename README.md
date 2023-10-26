@@ -55,7 +55,7 @@ DELETE /tasks/:taskId -> Eliminar task
 Cuando el servidor se apague y vuelva a levantarse los datos se reiniciarán.
 
 ```javascript
-const db = { tasks: [] };
+const db = { tasks: [] }
 ```
 
 **NOTA2**:
@@ -69,16 +69,16 @@ Por ejemplo: El delete debe borrar un recurso y devolver al cliente el objeto co
    **RESPONSE**: JSON CON ARRAY DE TASKS (statusCode: 200)
 
 ```javascript
-[
+;[
   {
     id: 151323,
-    body: "Comprar platanos",
+    body: 'Comprar platanos',
   },
   {
     id: 2341151,
-    body: "Comprar Fresas",
+    body: 'Comprar Fresas',
   },
-];
+]
 ```
 
 2.  **REQUEST**: GET /tasks/151323  
